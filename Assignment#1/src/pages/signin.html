@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In - Kōhi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.3.0/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-amber-50">
+
+  <nav class="flex items-center justify-between px-6 py-4 bg-amber-800 text-white">
+    <span class="text-xl font-bold">☕ Kōhi</span>
+    <div class="flex gap-6">
+      <a href="../../index.html" class="hover:text-amber-200">Home</a>
+      <a href="about.html" class="hover:text-amber-200">About</a>
+      <a href="contact.html" class="hover:text-amber-200">Contact</a>
+    </div>
+    <div class="flex gap-4">
+      <a href="signup.html" class="hover:text-amber-200">Sign Up</a>
+      <a href="signin.html" class="hover:text-amber-200">Sign In</a>
+    </div>
+  </nav>
+
+  <!-- Page Heading -->
+  <section class="py-12 px-6 text-center">
+    <h1 class="text-4xl font-extrabold text-amber-900 mb-2">Welcome Back</h1>
+    <p class="text-gray-600">Sign in to continue to Kōhi</p>
+  </section>
+
+  <!-- Flowbite Alert Component -->
+  <div class="max-w-md mx-auto px-6 mb-4">
+    <div class="flex items-center p-4 text-amber-800 border border-amber-300 rounded-lg bg-amber-50" role="alert">
+      <svg class="shrink-0 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM11 15H9v-6h2v6Z"/>
+      </svg>
+      <span class="ml-3 text-sm font-medium">New here? Create an account below.</span>
+    </div>
+  </div>
+
+  <!-- Sign In Card -->
+  <section class="flex justify-center px-6 pb-16">
+    <div class="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
+
+      <form class="space-y-4">
+
+        <!-- Flowbite Input Component -->
+        <div>
+          <label class="block mb-1 text-sm font-medium text-gray-900">Email</label>
+          <input type="email" required placeholder="you@example.com"
+            class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5">
+        </div>
+
+        <!-- Flowbite Input Component -->
+        <div>
+          <label class="block mb-1 text-sm font-medium text-gray-900">Password</label>
+          <input type="password" required placeholder="Enter your password"
+            class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5">
+        </div>
+
+        <!-- Flowbite Checkbox + Link Row -->
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <input type="checkbox" class="rounded border-gray-300">
+            <label class="text-sm text-gray-600">Remember me</label>
+          </div>
+          <a href="#" class="text-sm text-amber-800
