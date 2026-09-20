@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cafe Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <nav class="flex items-center justify-between px-6 py-4 bg-amber-800 text-white">
+
+    <span class="text-xl font-bold">☕ Kōhi</span>
+
+    <div class="flex gap-6">
+      <a href="index.html" class="hover:text-amber-200">Home</a>
+      <a href="src/pages/about.html" class="hover:text-amber-200">About</a>
+      <a href="src/pages/contact.html" class="hover:text-amber-200">Contact</a>
+    </div>
+
+    <div class="flex gap-4">
+      <a href="src/pages/signup.html" class="hover:text-amber-200">Sign Up</a>
+      <a href="src/pages/signin.html" class="hover:text-amber-200">Sign In</a>
+    </div>
+
+  </nav>
+
+  <!-- Hero Section with background image -->
+  <section class="relative py-32 px-6 text-center bg-cover bg-center"
+    style="background-image: url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1600&q=80');">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10">
+      <h1 class="text-5xl font-extrabold text-white mb-4">Welcome to Kōhi</h1>
+      <p class="text-lg text-amber-100 mb-8">Freshly brewed coffee, warm pastries, and a cozy place to relax.</p>
+      <a href="src/pages/contact.html" class="bg-amber-800 text-white px-6 py-3 rounded-lg hover:bg-amber-700">
+        Visit Us Today
+      </a>
+    </div>
+  </section>
+
+  <!-- Popular Menu Items -->
+  <section class="py-16 px-6 bg-white">
+    <h2 class="text-3xl font-bold text-center text-amber-900 mb-10">Popular Menu Items</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <div class="bg-amber-50 rounded-lg shadow-md overflow-hidden text-center">
+        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=500&q=80"
+          class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Cappuccino</h3>
+          <p class="text-gray-600">Rich espresso topped with velvety steamed milk foam.</p>
+          <p class="text-amber-800 font-bold mt-4">Rs. 450</p>
+        </div>
+      </div>
+
+      <div class="bg-amber-50 rounded-lg shadow-md overflow-hidden text-center">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=80"
+          class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Croissant</h3>
+          <p class="text-gray-600">Buttery, flaky pastry baked fresh every morning.</p>
+          <p class="text-amber-800 font-bold mt-4">Rs. 350</p>
+        </div>
+      </div>
+
+      <div class="bg-amber-50 rounded-lg shadow-md overflow-hidden text-center">
+        <img src="https://images.unsplash.com/photo-1461988091159-192b6df7054f?w=500&q=80"
+          class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Iced Latte</h3>
+          <p class="text-gray-600">Smooth espresso over ice with cold milk.</p>
+          <p class="text-amber-800 font-bold mt-4">Rs. 480</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-16 px-6 bg-amber-50">
+    <h2 class="text-3xl font-bold text-center text-amber-900 mb-10">Why Choose Us</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+      <div>
+        <h3 class="text-xl font-semibold mb-2">☕ Fresh Ingredients</h3>
+        <p class="text-gray-600">We source our beans and pastries daily for the best taste.</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-2">🏠 Cozy Atmosphere</h3>
+        <p class="text-gray-600">A warm, relaxing space perfect for work or catching up.</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-2">⚡ Fast Service</h3>
+        <p class="text-gray-600">Quick, friendly service without compromising quality.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-12 px-6 bg-amber-800 text-white">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div>
+        <p class="text-4xl font-bold">5000+</p>
+        <p>Cups Served Monthly</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold">10+</p>
+        <p>Years of Experience</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold">4.8★</p>
+        <p>Average Customer Rating</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 px-6 bg-white">
+    <h2 class="text-3xl font-bold text-center text-amber-900 mb-10">What Our Customers Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <div class="bg-amber-50 rounded-lg p-6 shadow-md">
+        <p class="text-gray-700 italic">"Best cappuccino in town, and the staff always remembers my order!"</p>
+        <p class="text-amber-800 font-semibold mt-4">— Ayesha K.</p>
+      </div>
+
+      <div class="bg-amber-50 rounded-lg p-6 shadow-md">
+        <p class="text-gray-700 italic">"My favorite spot to study — quiet, cozy, and great wifi."</p>
+        <p class="text-amber-800 font-semibold mt-4">— Hamza R.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Gallery with real photos -->
+  <section class="py-16 px-6 bg-amber-50">
+    <h2 class="text-3xl font-bold text-center text-amber-900 mb-10">Gallery</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80"
+        class="rounded-lg w-full h-40 object-cover">
+      <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400&q=80"
+        class="rounded-lg w-full h-40 object-cover">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80"
+        class="rounded-lg w-full h-40 object-cover">
+      <img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=400&q=80"
+        class="rounded-lg w-full h-40 object-cover">
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section class="py-16 px-6 bg-white max-w-2xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-amber-900 mb-10">Frequently Asked Questions</h2>
+
+    <details class="mb-4 border-b pb-4">
+      <summary class="font-semibold cursor-pointer">What are your opening hours?</summary>
+      <p class="text-gray-600 mt-2">We're open every day from 8 AM to 10 PM.</p>
+    </details>
+
+    <details class="mb-4 border-b pb-4">
+      <summary class="font-semibold cursor-pointer">Do you offer free wifi?</summary>
+      <p class="text-gray-600 mt-2">Yes! Free high-speed wifi is available for all customers.</p>
+    </details>
+
+    <details class="mb-4 border-b pb-4">
+      <summary class="font-semibold cursor-pointer">Can I book a table in advance?</summary>
+      <p class="text-gray-600 mt-2">Absolutely, just reach out through our Contact page.</p>
+    </details>
+
+  </section>
+
+  <!-- Opening Hours Table -->
+  <section class="py-16 px-6 bg-amber-50">
+    <h2 class="text-3xl font-bold text-center text-amber-900 mb-10">Opening Hours</h2>
+    <table class="mx-auto border-collapse w-full max-w-md text-center">
+      <thead>
+        <tr class="bg-amber-800 text-white">
+          <th class="py-2 px-4">Day</th>
+          <th class="py-2 px-4">Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b">
+          <td class="py-2 px-4">Monday - Friday</td>
+          <td class="py-2 px-4">8:00 AM - 10:00 PM</td>
+        </tr>
+        <tr class="border-b bg-white">
+          <td class="py-2 px-4">Saturday</td>
+          <td class="py-2 px-4">9:00 AM - 11:00 PM</td>
+        </tr>
+        <tr class="border-b">
+          <td class="py-2 px-4">Sunday</td>
+          <td class="py-2 px-4">9:00 AM - 9:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="py-16 px-6 bg-white text-center">
+    <h2 class="text-3xl font-bold text-amber-900 mb-4">Join Our Newsletter</h2>
+    <p class="text-gray-600 mb-6">Get updates on new menu items and special offers.</p>
+    <form class="flex flex-col md:flex-row justify-center gap-4 max-w-md mx-auto">
+      <input type="email" placeholder="Enter your email" required
+        class="border border-gray-300 rounded-lg px-4 py-2 w-full">
+      <button type="submit"
+        class="bg-amber-800 text-white px-6 py-2 rounded-lg hover:bg-amber-700">
+        Subscribe
+      </button>
+    </form>
+  </section>
+
+  <!-- Call To Action Banner -->
+  <section class="py-16 px-6 bg-amber-800 text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Craving Something Delicious?</h2>
+    <p class="mb-6">Visit us today or get in touch to plan your next visit.</p>
+    <a href="src/pages/contact.html"
+      class="bg-white text-amber-800 px-6 py-3 rounded-lg font-semibold hover:bg-amber-100">
+      Contact Us
+    </a>
+  </section>
+
+  <footer class="bg-amber-900 text-white text-center py-6 mt-10">
+    <p>&copy; 2026 Kōhi. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

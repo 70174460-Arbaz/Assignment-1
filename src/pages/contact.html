@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Kōhi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.3.0/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="flex items-center justify-between px-6 py-4 bg-amber-800 text-white">
+    <span class="text-xl font-bold">☕ Kōhi</span>
+    <div class="flex gap-6">
+      <a href="../../index.html" class="hover:text-amber-200">Home</a>
+      <a href="about.html" class="hover:text-amber-200">About</a>
+      <a href="contact.html" class="hover:text-amber-200">Contact</a>
+    </div>
+    <div class="flex gap-4">
+      <a href="signup.html" class="hover:text-amber-200">Sign Up</a>
+      <a href="signin.html" class="hover:text-amber-200">Sign In</a>
+    </div>
+  </nav>
+
+  <!-- Page Heading -->
+  <section class="py-16 px-6 bg-amber-50 text-center">
+    <h1 class="text-4xl font-extrabold text-amber-900 mb-4">Get In Touch</h1>
+    <p class="text-gray-700 max-w-xl mx-auto">Have a question or feedback? We'd love to hear from you.</p>
+  </section>
+
+  <!-- Flowbite Alert -->
+  <div class="max-w-2xl mx-auto mt-8 px-4">
+    <div class="flex items-center p-4 mb-4 text-amber-800 border border-amber-300 rounded-lg bg-amber-50" role="alert">
+      <svg class="shrink-0 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM11 15H9v-6h2v6Z"/>
+      </svg>
+      <span class="ml-3 text-sm font-medium">We usually respond within 24 hours!</span>
+    </div>
+  </div>
+
+  <!-- Info Cards -->
+  <section class="py-10 px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+
+      <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 text-center">
+        <h3 class="font-semibold text-amber-800 mb-2">📍 Address</h3>
+        <p class="text-gray-600 text-sm">123 Main Boulevard, Lahore, Pakistan</p>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 text-center">
+        <h3 class="font-semibold text-amber-800 mb-2">📞 Phone</h3>
+        <p class="text-gray-600 text-sm">+92 300 1234567</p>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 text-center">
+        <h3 class="font-semibold text-amber-800 mb-2">✉️ Email</h3>
+        <p class="text-gray-600 text-sm">hello@mycafe.com</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Form (connected to Formspree) -->
+  <section class="py-10 px-6 max-w-lg mx-auto">
+    <h2 class="text-2xl font-bold text-amber-900 mb-6 text-center">Send Us a Message</h2>
+
+    <form action="https://formspree.io/f/PASTE_YOUR_ID_HERE" method="POST" class="space-y-4">
+
+      <div>
+        <label class="block mb-1 text-sm font-medium text-gray-900">Your Name</label>
+        <input type="text" name="name" required
+          class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5">
+      </div>
+
+      <div>
+        <label class="block mb-1 text-sm font-medium text-gray-900">Your Email</label>
+        <input type="email" name="email" required
+          class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5">
+      </div>
+
+      <div>
+        <label class="block mb-1 text-sm font-medium text-gray-900">Message</label>
+        <textarea name="message" rows="4" required
+          class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5"></textarea>
+      </div>
+
+      <button type="submit"
+        class="w-full bg-amber-800 text-white font-semibold py-2.5 rounded-lg hover:bg-amber-700">
+        Send Message
+      </button>
+
+    </form>
+  </section>
+
+  <!-- Map -->
+  <section class="py-10 px-6 max-w-3xl mx-auto">
+    <iframe
+      class="w-full h-64 rounded-lg"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13606.0!2d74.3436!3d31.5497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1"
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <footer class="bg-amber-900 text-white text-center py-6 mt-10">
+    <p>&copy; 2026 Kōhi. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.3.0/dist/flowbite.min.js"></script>
+</body>
+</html>
